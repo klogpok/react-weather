@@ -1,0 +1,49 @@
+$font-family: 'Montserrat', sans-serif;
+
+$primary-color: #4793ff;
+$light-background: #fff;
+$box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.35);
+$border-radius: 20px;
+
+$light-color: #fff;
+$dark-color: #000;
+$base-color: #939cb0;
+
+$body-bg-dark: #0d1117;
+$body-bg-light: #fff;
+
+$components-bg-dark: #4f4f4f;
+$components-bg-light: #fff;
+
+$card-bg-light: rgba(71, 147, 255, 0.2);
+$card-bg-dark: #2e3035;
+
+$card-box-shadow-light: 0px 3px 20px rgba(147, 144, 144, 0.28);
+$card-box-shadow-dark: 0px 3px 20px rgba(5, 5, 5, 0.28);
+
+:root {
+    //  Body background
+    --body-bg-dark: #{$body-bg-dark};
+    --body-bg-light: #{$body-bg-light};
+    --body-bg-default: var(--body-bg-light);
+
+    //  Components background
+    --components-bg-dark: #{$components-bg-dark};
+    --components-bg-light: #{$components-bg-light};
+    --components-bg-default: var(--components-bg-light);
+
+    //card-background
+    --card-bg-dark: #{$card-bg-dark};
+    --card-bg-light: #{$card-bg-light};
+    --card-bg-default: var(--card-bg-light);
+
+    //card-shadow
+    --card-shadow-dark: #{$card-box-shadow-dark};
+    --card-shadow-light: #{$card-box-shadow-light};
+    --card-shadow-default: var(--card-shadow-light);
+
+    //text
+    --text-color-dark: #{$light-color};
+    --text-color-light: #{$dark-color};
+    --text-color-default: var(--text-color-light);
+}

@@ -1,0 +1,95 @@
+@import '../../../../styles/variables.scss';
+
+.days {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: var(--components-bg-default);
+    box-shadow: $box-shadow;
+    border-radius: 0 0 20px 20px;
+}
+
+.card {
+    width: 149px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-bg-default);
+    border-radius: 10px;
+
+    color: $base-color;
+    font-size: 13px;
+    font-weight: normal;
+
+    transition: box-shadow .3s;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: var(--card-shadow-default);
+    }
+
+    .day,
+    .temp_day {
+        color: var(--text-color-default);
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .day_info {
+        margin-top: 7px;
+        font-size: 14px;
+    }
+
+    .day_icon {
+        width: 48px;
+        height: 48px;
+        margin-top: 18px;
+    }
+
+    .temp_day {
+        margin-top: 14px;
+    }
+
+    .info {
+        margin-top: 6px;
+    }
+}
+
+.tabs {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .cancel,
+    .tab {
+        padding: 9px 24px;
+        background-color: var(--components-bg-default);
+        color: var(--text-color-default);
+        box-shadow: $box-shadow;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: normal;
+        cursor: pointer;
+        transition: box-shadow .3s;
+
+        &:hover {
+            box-shadow: var(--card-shadow-default);
+        }
+    }
+
+    .tabs__wrapper {
+        display: flex;
+
+        .tab {
+            margin-right: 15px;
+
+            &.active {
+                background-color: $primary-color;
+                color: $light-color;
+            }
+        }
+    }
+}

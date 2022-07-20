@@ -1,0 +1,22 @@
+@import '../../../../styles//variables.scss';
+
+.this__day_info {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: var(--components-bg-default);
+    box-shadow: $box-shadow;
+    border-radius: 20px;
+
+    .this__day_info_items {
+        z-index: 10;
+    }
+
+    img {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

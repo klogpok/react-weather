@@ -1,0 +1,50 @@
+@import '../../../../styles/variables.scss';
+
+.this__day {
+    max-width: 400px;
+    width: 100%;
+    margin-right: 50px;
+    padding: 20px;
+    background: var(--components-bg-default);
+    box-shadow: $box-shadow;
+    border-radius: 20px;
+}
+
+.top__block {
+    width: 100%;
+    margin-bottom: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    svg {
+        width: 112px;
+        height: 112px;
+    }
+}
+
+.this__temp {
+    color: $primary-color;
+    font-weight: 500;
+    font-size: 86px;
+}
+
+.this__day_name {
+    color: var(--text-color-default);
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.this__day_icon {
+    margin: 16px 16px 0 0;
+}
+
+.bottom__block {
+    color: $base-color;
+    font-weight: 400;
+    font-size: 25px;
+
+    .this__time {
+        margin-bottom: 18px;
+    }
+}
