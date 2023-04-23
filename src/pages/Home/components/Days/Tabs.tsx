@@ -16,7 +16,7 @@ export const Tabs: React.FC<Props> = (props: Props): JSX.Element => {
             value: '10 Day',
         },
         {
-            value: 'Monthly',
+            value: '2 Weeks',
         },
     ];
 

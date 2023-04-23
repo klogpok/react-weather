@@ -14,6 +14,7 @@ interface IItem {
 
 export const ThisDayInfoItem: React.FC<Props> = ({ item }: Props): JSX.Element => {
     const { icon_id, name, value } = item;
+
     return (
         <div className={s.item}>
             <div className={s.indicator}>
